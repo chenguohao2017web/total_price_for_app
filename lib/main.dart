@@ -141,11 +141,7 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   void _calculate() {
-    print(current_slide_controller.text);
-    print(last_slide_controller.text);
-    print(current_water_controller.text);
-    print(last_water_controller.text);
-    print(house_controller.text);
+    if(!_formKey.currentState.validate()) return null;
 
     // num current_slide = num.parse(current_slide_controller.text);
     // num last_slide = double.parse(last_slide_controller.text);
